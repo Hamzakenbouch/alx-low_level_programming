@@ -2,7 +2,6 @@
 
 /**
  * main - print alphabet in lowercase followed by a new line
- *
  * Return : 0
  */
 
