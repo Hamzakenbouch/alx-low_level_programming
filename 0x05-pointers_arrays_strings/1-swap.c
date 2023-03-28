@@ -8,5 +8,5 @@
 
 void swap_int(int *a, int *b)
 {
-	strcpy(a, b);
+	strcpy(*a, *b);
 }
