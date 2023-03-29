@@ -5,9 +5,8 @@
  * @dest: char
  * @src: char
  * @n: int
- * return: pointer to the resulting string dest
+ * Return: pointer to the resulting string dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int a, b;
@@ -17,10 +16,10 @@ char *_strncat(char *dest, char *src, int n)
 		continue;
 	}
 
-	for (b = 0; src[b] != '\0'; && b < n; b++)
+	for (b = 0; src[b] != '\0' && b < n; b++)
 	{
-		dest[a+b] = src[b];
+		dest[a + b] = src[b];
 	}
-	dest[a+b] = '\0';
+	dest[a + b] = '\0';
 	return (dest);
 }
