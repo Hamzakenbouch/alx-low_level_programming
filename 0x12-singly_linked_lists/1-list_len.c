@@ -1,21 +1,18 @@
+#include <stddef.h>
 #include "lists.h"
-
 /**
- * list_len -function that returns the number of elements
- * @h: pointer
- *
- *
- * Return: the numb of elements in list
+ * list_len - function that returns the number of elements
+ * @h: pointer to the firt node
+ * Return: the number of elements
  */
-
 size_t list_len(const list_t *h)
 {
-	size_t lenn = 0;
-
-	while (h != NULL)
+	size_t len = 0;
+	const list_t *node = h;
+	while (node != NULL)
 	{
-		lenn++;
-		h = h->next;
+	len++;
+	node = node->next;
 	}
-	return (lenn);
+	return (len);
 }
